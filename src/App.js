@@ -20,8 +20,8 @@ export default () => (
     <SafeAreaView style ={style.App}>
         <ParImpar num = {3}/>
         {/*
-        <Diferenciar />
         <ContadorV2 />
+        <Diferenciar />
         <Pai />
         <Pai />
         <Contador inicial={100} passo={15} />
@@ -40,7 +40,8 @@ export default () => (
         <CompPadrao />
         <Comp1 />
         <Comp2 />
-        <Primeiro />*/}
+        <Primeiro />
+    */}
     </SafeAreaView>
 )
 
