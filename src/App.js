@@ -1,7 +1,7 @@
 import React from 'react'
-import {SafeAreaView, StyleSheet} from 'react-native'
+import {SafeAreaView, StyleSheet, Text} from 'react-native'
 
-import ParImpar from './components/ParImpar'
+//import ParImpar from './components/ParImpar'
 //import Diferenciar from './components/Diferenciar'
 //import ContadorV2 from './components/contador/ContadorV2'
 //import Pai from './components/indireta/Pai'
@@ -14,12 +14,20 @@ import ParImpar from './components/ParImpar'
 //import CompPadrao, {Comp1, Comp2} from './components/Multi'
 //import Primeiro from './components/Primeiro'
 
+import TelaA from './views/TelaA'
+import TelaB from './views/TelaB'
+import TelaC from './views/TelaC'
+
 //export default () => <Text> Primeiro componente! </Text> //função simplificada
 
 export default () => (
-    <SafeAreaView style ={style.App}>
-        <ParImpar num = {3}/>
+    //<SafeAreaView style ={style.App}>
+    <SafeAreaView style={{flex: 1}}>
+        <TelaA />
+        <TelaB />
+        <TelaC />
         {/*
+        <ParImpar num = {3}/>
         <ContadorV2 />
         <Diferenciar />
         <Pai />
@@ -45,11 +53,11 @@ export default () => (
     </SafeAreaView>
 )
 
-const style = StyleSheet.create({
-    App: {
-        //backgroundColor : '#A00',
-        flexGrow: 1, //cresce conforme a tela
-        justifyContent: "center",
-        alignItems: "center",
-    }
-})
+//const style = StyleSheet.create({
+//    App: {
+//        //backgroundColor : '#A00',
+//        flexGrow: 1, //cresce conforme a tela
+//        justifyContent: "center",
+//        alignItems: "center",
+//    }
+//})
